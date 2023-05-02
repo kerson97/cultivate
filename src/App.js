@@ -11,18 +11,28 @@ import {
 import NavBar from './components/navBar/NavBar'
 import Home from './pages/home/Home'
 import Profile from './pages/profile/Profile'
+import './style.scss'
+import { useContext } from 'react'
+import { DarkModeContext } from './context/darkModeContext'
+import { DarkMode } from '@mui/icons-material'
 
 function App() {
   const currentUser = true
+  const { darkMode } = useContext(DarkModeContext)
 
   const Layout = () => {
     return (
-      <div>
-        <NavBar />
-        <div style={{ display: 'flex' }}> </div>
-        <LeftBar />
-        <Outlet />
-        <RightBar />
+      <div className={`theme-${darkMode ? 'dark' : 'light'}`}>
+        <div>
+          <NavBar />
+          <div style={{ display: 'flex' }}>
+            <LeftBar />
+            <div style={{ flex: 6 }}>
+              <Outlet />
+            </div>
+            <RightBar />
+          </div>
+        </div>
       </div>
     )
   }
