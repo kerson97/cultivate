@@ -15,9 +15,10 @@ import './style.scss'
 import { useContext } from 'react'
 import { DarkModeContext } from './context/darkModeContext'
 import { DarkMode } from '@mui/icons-material'
+import { AuthContext } from './context/authContext'
 
 function App() {
-  const currentUser = true
+  const { currentUser } = useContext(AuthContext)
   const { darkMode } = useContext(DarkModeContext)
 
   const Layout = () => {
