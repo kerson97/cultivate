@@ -1,6 +1,6 @@
 .register {
   height: 100vh;
-  background-color: #41a985;
+  background-color: rgb(23, 22, 22);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@
           rgba(34, 193, 195, 0.25) 0%,
           rgba(253, 187, 45, 0.25) 100%
         ),
-        url('https://images.pexels.com/photos/1011302/pexels-photo-1011302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+        url('https://images.pexels.com/photos/1685650/pexels-photo-1685650.jpeg')
           center;
       min-height: 600px;
       background-size: cover;
@@ -27,7 +27,7 @@
       flex-direction: column;
       gap: 20px;
       color: white;
-      align-items: center;
+      align-items: left;
 
       h1 {
         font-size: 110px;
@@ -42,7 +42,7 @@
       span {
         font-size: 18px;
         font-weight: bold;
-        margin-top: 100px;
+        margin-top: 150px;
       }
       button {
         padding: 20px;
