@@ -33,7 +33,7 @@ const Login = () => {
         <div className='left'>
           <h1>Cultivate</h1>
           <p>A gathering place for mycologists</p>
-          <span>Don't you have an account?</span>
+          <span>Don't have an account?</span>
           <Link to='/register'>
             <button>Register</button>
           </Link>
